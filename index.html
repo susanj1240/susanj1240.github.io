@@ -1,0 +1,142 @@
+<html>
+<meta charset="UTF-8">
+<meta name = "description" content="Profile">
+<meta name = "keywords" content = "html, CSS">
+<meta name = "author" content = "Sooyun Jang">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--CSS style for my website-->
+<head>
+<style>
+ #firstHeader {
+    background-color:#008AB8;
+    color : black;
+    padding: 100px;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#008AB8;
+}
+
+#navbar a {
+    float:left;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+#navbar a:hover {
+    background-color: rgb(7, 104, 136);
+    color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.page {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+</style>
+</head>
+    <body >
+
+        <!--cover page-->
+        
+        <section id = "home" >
+        <div class="page">
+            <!--Options : -->
+            <div id="navbar" style="float:center;">
+                <a href=#home>Home</a>
+                <a href=#aboutme>About me</a>
+                <a href=#project>Projects</a>
+                <a href=#contact>Contact</a>
+            </div>
+
+            <h1 id = "firstHeader">Welcome to Susan Jang Website</h1>
+
+            <section style = "float:center">
+            <!--image (profile)-->
+            <img src = "./image/susanjang.jpg" alt = "Susan Jang picture" style="float:center;width:400px;height:400px;padding:40px;">
+            </section>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section id="aboutme" style = "padding:100px;">
+           <!-- About me -->
+           <div id="aboutme" class = "page" style="padding: 100px">
+                <h1 style="text-align: center">
+                    About Me
+                </h1>
+                    
+                <p>
+                    Hello, This is Susan Jang (my legal name is Sooyun Jang). I am a Math major right now, but I am going to apply for BACS in this coming spring semester. Although I have a little experience, I am passionate about software development.  This website is the first project that I did by myself, and I would like to continue learning software development through your company. Please contact me if you would like to offer me opportunities.
+                </p>
+            </div>
+    </section>
+
+    <!--Projects-->
+    <section id="project" style = "padding:100px;">
+        <div class="page">
+            <h1>Projects</h1>
+            <h2 style="font-size: 20px;padding: 20px;">KSEA Web Page</h2>
+            <a href="https://www.uva-ksea.org/" target = _blank><img scr="./image/ksea.png" style = "size: 50px;" alt = "KSEA web page"></a>
+            <p>Assistant Web Developer / Oct 2018 ~ </p>
+            <p style="font-size:15px">This is a website for KSEA(Korean American Scientists and Engineers Association) of UVA.</p>
+            <p style="font-size:15px">This website contains information about events, job or internship opportunity and so on. </p>
+            <a href="https://www.uva-ksea.org/" target = "_blank" style="font-size:15px">https://www.uva-ksea.org/</a>
+        </div>
+    </section>
+
+
+    <!--contact info-->
+    <section id = "contact" style = "padding:100px;">
+        <div class="page">
+            <h1> Contacts</h1>
+            <p>Email : <a style="color:#000000" href= "mailto:susanj1240@gmail.com">susanj1240@gmail.com</a></p>
+            <p>Email(school) : <a style="color:#000000" href="mailto:sj7yu@virginia.edu">sj7yj@virginia.edu</a></p>
+            <p>Phone: 5712458442</p>
+        </div>
+    </section>
+       
+    <!--code from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky-->
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+
+
+    </body>
+</html>
