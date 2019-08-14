@@ -1,155 +1,203 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name = "description" content="Profile">
-<meta name = "keywords" content = "html, CSS">
-<meta name = "author" content = "Sooyun Jang">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--CSS style for my website-->
 <head>
-<style>
- #firstHeader {
-    background-color:#008AB8;
-    color : black;
-    padding: 100px;
-    text-align:center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-#navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#008AB8;
-}
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
 
-#navbar a {
-    float:left;
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!-- Photo by Melinda Gimpel on Unsplash -->
 
-/* Change the link color on hover */
-#navbar a:hover {
-    background-color: rgb(7, 104, 136);
-    color: white;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.page {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 50px;
-    text-align: center;
-}
-
-</style>
 </head>
-    <body >
 
-        <!--cover page-->
-        
-        <section id = "home" >
-        <div class="page">
-            <!--Options : -->
-            <div id="navbar" style="float:center;">
-                <a href=#home>Home</a>
-                <a href=#aboutme>About me</a>
-                <a href=#project>Projects</a>
-                <a href=#contact>Contact</a>
-                <a href=#resume><a href="https://docs.google.com/document/d/1Av6kGw15OotyZWFFFlMd_ERsPNoui4OxFLkbbFpIojo/edit?usp=sharing" target = "_blank">Resume</a></a>
+<body class="body">
+    <div class="mainPage">
+
+        <div class="mainImg">
+
+            <!--Nav Bar-->
+            <div class="navbar-fixed">
+                <nav class="transparent z-depth-0">
+                    <div class="nav-wrapper">
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="sass.html">Projects</a></li>
+                            <li><a href="badges.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
 
-            <h1 id = "firstHeader">Welcome to Susan Jang Website</h1>
 
-            <section style = "float:center">
-            <!--image (profile)-->
-            <img src = "./image/susanjang.jpg" alt = "Susan Jang picture" style="float:center;width:400px;height:400px;padding:40px;">
-            </section>
-        </div>
-    </section>
+            <h2 id="name">
+                Susan Jang
+            </h2>
 
-    <!--About me-->
-    <section id="aboutme" style = "padding:100px;">
-           <!-- About me -->
-           <div id="aboutme" class = "page" style="padding: 100px">
-                <h1 style="text-align: center">
-                    About Me
-                </h1>
-                    
-                <p style="font-size:18px">
-                    Hello, This is Susan Jang (my legal name is Sooyun Jang). 
-                    I am a Math major right now, but I am going to apply for BACS in this coming spring semester. 
-                    Although I have a little experience, I am passionate about software development.  
-                    This website is the first project that I did by myself, and I would like to continue learning software development through your company. 
-                    Please contact me if you would like to offer me opportunities. 
-                </p>
+            <h6 id="underName">Computer Science Student at UVA</h6>
+
+            <!--Buttons for About && Project && Contact-->
+            <div class="row" id="mainPageButtons">
+                <button id="about" class="waves-effect waves-light light-blue lighten-2 myBtn btn " type="submit" name="action">About
+                    Me
+                </button>
+
+                <div class="btnDivider"></div>
+
+                <button id="project" class="waves-effect waves-light light-blue lighten-2 myBtn btn " type="submit" name="action">Projects
+                </button>
+
+                <div class="btnDivider"></div>
+
+                <button id="contact" class="waves-effect waves-light light-blue lighten-2 myBtn btn " type="submit" name="action">Contact
+                    Information
+                </button>
             </div>
-    </section>
 
-    <!--Projects-->
-    <section id="project" style = "padding:100px;">
-        <div class="page">
-            <h1>Projects</h1>
-            <h2 style="font-size: 20px;padding: 20px;">KSEA Web Page</h2>
-            <a href="https://www.uva-ksea.org/" target = _blank>
-                <img src="./image/ksea.jpg" style="width:800px;height:400px;" alt = "KSEA web page">
-            </a>
-            <p>Assistant Web Developer / Oct 2018 ~ </p>
-            <p style="font-size:15px">This is a website for KSEA(Korean American Scientists and Engineers Association) of UVA.</p>
-            <p style="font-size:15px">This website contains information about events, job or internship opportunity and so on. </p>
-            <a href="https://www.uva-ksea.org/" target = "_blank" style="font-size:15px">https://www.uva-ksea.org/</a>
         </div>
-    </section>
-
-
-    <!--contact info-->
-    <section id = "contact" style = "padding:100px;">
-        <div class="page">
-            <h1> Contacts</h1>
-            <p style="font-size:18px">Email : <a style="color:#000000" href= "mailto:susanj1240@gmail.com">susanj1240@gmail.com</a></p>
-            <p style="font-size:18px">Email(school) : <a style="color:#000000" href="mailto:sj7yu@virginia.edu">sj7yj@virginia.edu</a></p>
-            <p style="font-size:18px">Phone: 5712458442</p>
-        </div>
-    </section>
-
-       
-    <!--code from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky-->
-    <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            </script>
-
-
-    </body>
-
-    <div style="font-size: 15px;text-align: center">
-        <p>© 2018 <a href="http://susanj1240.github.io">Sooyun Jang</a>. All rights reserved.</p>
     </div>
+
+    <div class="section white" id="p2">
+        <div class="row container">
+            <div class="aboutMePage" id="aboutMePage">
+                <div class="row">
+                    <p class="header" style="font-size:30px">About Me</p>
+                </div>
+
+                <div class="row">
+                    <div class="col s4">
+                        <i class="material-icons" id="icon">school</i>
+                        <p style="font-size:23px">Education</p>
+                        <div class="divider"></div>
+                        <p>University of Virginia 2020</p>
+                        <p>B.A. Computer Science</p>
+                        <p>4th Year</p>
+
+                    </div>
+                    <div class="col s4">
+                        <i class="material-icons" id="icon">grade</i>
+                        <p style="font-size:23px">Skill</p>
+                        <div class="divider"></div>
+                        <p style="font-size:17px;color:#0d47a1"> - CS Related - </p>
+                        <p>Javascript, HTML, CSS, Java, Python, C++</p>
+                        <p>Materialize, NodeJS, WebRTC</p>
+                        <p style="font-size:17px;color:#0d47a1"> - Extra Skill - </p>
+                        <p>Microsoft</p>
+                        <p>Language: Korean, English</p>
+
+                    </div>
+                    <div class="col s4">
+                        <i class="material-icons" id="icon">favorite</i>
+                        <p style="font-size:23px">Interest</p>
+                        <div class="divider"></div>
+                        <p>Front End Development</p>
+                        <p>UI Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img class="img" src="image/uva.jpg"></div>
+    </div>
+
+    <div class="section white" id="p3">
+        <div class="row container">
+            <div class="row">
+                <p class="header" style="font-size:30px">Projects</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <p style="font-size: 18px;color:#1a237e;padding: 16px">- KSEA Webpage -</p>
+                <img src="image/ksea.jpg" class="center">
+            </div>
+
+            <div class="row">
+                <p style="font-size:16px;color:#3949ab;padding:16px">Assistant Web Developer / Oct 2018 ~</p>
+                <p>
+                    This is a website for KSEA(Korean American Scientists and Engineers Association) of UVA.
+                </p>
+                <p>This website contains information about events, job or internship opportunity and so on.</p>
+                <div style="padding:16px">
+                    <button class="btn waves-effect waves-light light-blue lighten-2" style="border-radius: 15px;font-family: Times New Roman, Times, serif;"
+                        type="submit" onclick="window.location.href = 'https://uva-ksea.org/';" target="_blank" name="action">Click
+                        Here to Visit KSEA Website</button>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <p style="font-size: 18px;color:#1a237e;padding: 16px">- Fasoo Internship -</p>
+                <p style="font-size: 16px;color:#1565c0;padding: 16px">- WebRTC Project -</p>
+                <img src="image/fasoo.png" class="center z-depth-1">
+            </div>
+
+            <div class="row">
+                <p style="font-size:16px;color:#3949ab;padding:16px">Front End Developer / June 10th 2019 ~ August 8th 2019</p>
+                <p>
+                    Fasoo is a software company that provides unstructured data security and enterprise document platforms. Fasoo's products
+                    include Wrapsody, Sparrow, and so on. I interned at Wrapsody and participated in a project that aimed
+                    to create a real-time collaborating web application using WebRTC. WebRTC is an open project that enables
+                    web browsers with Real-Time Communications (RTC) capabilities via simple JavaScript APIs.
+                </p>
+                <p>My role in this project includes planning and designing Wass9, developing a Wass9 using WebRTC, and incorporating
+                    the application to Wrapsody. </p>
+                <p>Skills & Tools used in this project : WebRTC, HTML, CSS (Materialize), Javascript, NodeJS </p>
+                <div style="padding:16px">
+                    <button class="btn waves-effect waves-light light-blue lighten-2" style="border-radius: 15px;font-family: Times New Roman, Times, serif;"
+                        type="submit" onclick="window.location.href = 'https://en.fasoo.com/';" target="_blank" name="action">Click
+                        Here to Visit Fasoo Website</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img class="img" src="image/contact.jpg"></div>
+    </div>
+
+    <div class="section white" id="p3">
+        <div class="row container">
+            <div class="row">
+                <p class="header" style="font-size:30px">Contact Information</p>
+            </div>
+
+            <div class="divider"></div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+
+        $(".dropdown-trigger").dropdown();
+
+
+    </script>
+
+</body>
+
 </html>
