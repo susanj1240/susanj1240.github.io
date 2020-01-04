@@ -7,6 +7,9 @@ figure.visible {
 opacity: 1;
 }
 
+p{
+    color: #4d4d4d;
+}
 #project1{
 	width: 85%;
 }
@@ -15,6 +18,9 @@ opacity: 1;
 	padding-top: 50px;
 }
 
+.button-skills{
+    padding: 5px;
+}
 .skills{
 	padding-top: 7px;
 	padding-bottom: 7px;
@@ -58,16 +64,116 @@ opacity: 1;
   transform: scale(1.2);
 }
 
-#test p {
-	text-shadow: 2px 2px 8px #dedede;
-    font-size: 5vw;
-    color: white;
-    padding-left: 10%;
-    padding-top: 25%;
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
+#college{
+    font-size: 25px;
+}
+
+#college img{
+    width: 25px;
+}
+#degree{
+    font-size: 20px;
+}
+
+.class-list{
+    padding:30px;
+}
+
+@media (min-width: 1000px) {
+    #test p {
+    	text-shadow: 2px 2px 8px #dedede;
+        font-size: 5vw;
+        color: white;
+        padding-left: 10%;
+        padding-top: 25%;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+    .carousel{
+        padding: 20px;
+    }
+    .carousel img{
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    #test p {
+        text-shadow: 2px 2px 8px #dedede;
+        font-size: 6vw;
+        color: white;
+        padding-left: 10%;
+        padding-top: 5%;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+    .carousel{
+        padding: 10px;
+    }
+    .carousel img{
+        height: 200px;
+
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h4{
+        font-size: 1.5em;
+    }
+    h5{
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 15px;
+    }
+    #livingclassrooms{
+        height: auto;
+    }
+
+    .skills{
+
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-radius: 15px;
+        background-color: white;
+        border-color: #0059b3;
+        color: #0059b3;
+        border-width: 1px;
+    }
+
+    .skills.abled{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-radius: 15px;
+        background-color: #0059b3;
+        border-color: #0059b3;
+        color: white;
+    }
+
+    #college{
+        font-size:15px;
+    }
+    #college img{
+        width: 15px;
+    }
+
+    #degree{
+        font-size: 13px;
+    }
+
+    .class-list{
+        padding:20px;
+        font-size: 15px;
+    }
 }
 
 @keyframes fadein {
@@ -110,10 +216,6 @@ h4{
 .education{
 	padding: 10px;
 }
-
-
-
-
 
 
 

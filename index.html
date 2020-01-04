@@ -66,38 +66,43 @@
       <h1 align="center" style="padding-bottom:15px">About Me</h1>
 
       <hr width="90%">
-      <div class="row">
 
-        <p style="text-align: left">Hello, my name is Susan and I study computer science at the University of Virginia(UVA). I was born in Seoul, South Korea and moved to the United States 5 years ago. So I am familiar with both Korean and American culture. I was originally a math major but switched to a computer science major in my junior year because I found programming interesting. My graduation is 2020 May and currently seeking for a job/internship as a software developer. </p>
+      <div class="container">
 
-        <div style="width: 80%; left: 10%;padding: 20px;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img height= "450px" class="d-block w-100" src="img/routunda.jpg" alt="First slide">
+        <div class="row">
+
+          <p style="text-align: left;">Hello, my name is Susan and I study computer science at the University of Virginia(UVA). I was born in Seoul, South Korea and moved to the United States 5 years ago. So I am familiar with both Korean and American culture. I was originally a math major but switched to a computer science major in my junior year because I found programming interesting. My graduation is 2020 May and currently seeking for a job/internship as a software developer. </p>
+
+          <div style="width: 80%; left: 10%;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  class="d-block w-100" src="img/routunda.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <!--Photo by Ciaran O'Brien on Unsplash-->
+                <img  class="d-block w-100" src="img/korea.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <!--Photo by Hayes Potter on Unsplash-->
+                <img  class="d-block w-100" src="img/usa.jpg" alt="Third slide">
+              </div>
             </div>
-            <div class="carousel-item">
-              <!--Photo by Ciaran O'Brien on Unsplash-->
-              <img height= "450px" class="d-block w-100" src="img/korea.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <!--Photo by Hayes Potter on Unsplash-->
-              <img height= "450px" class="d-block w-100" src="img/usa.jpg" alt="Third slide">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
 
-        <p style="text-align: left">Besides programming, I love art. You can check my <a href="https://www.instagram.com/milkart7777/?hl=en" target="_blank">Instagram account</a> if you are interested in my work. Using my artistic talent, I want to develop creative websites. </p>
+          <p style="text-align: left">Besides programming, I love art. You can check my <a href="https://www.instagram.com/milkart7777/?hl=en" target="_blank">Instagram account</a> if you are interested in my work. Using my artistic talent, I want to develop creative websites. </p>
 
-        <p style="text-align: left">Thank you for visiting!</p>
+          <p style="text-align: left">Thank you for visiting!</p>
+      </div>
     </div>
+  </div>
   </section>
 
   <!-- Projects Section -->
@@ -137,58 +142,51 @@
           <button disabled class="skills">WebRTC</button>
           <button disabled class="skills">NodeJs</button>
           <button disabled class="skills">MySQL</button>
-          <button href="https://materializecss.com/" class="skills abled">Materialize</button>
+          <a href="https://materializecss.com/" target="_blank"><button class="skills abled">Materialize</button></a>
         </div>
 
       </figure>
-
-
-    </div>
 
     <hr width="90%">
-    <div class="container">
-      <figure>
+    <figure>
+      <div class="container">
 
-        <h4 align="center" style="padding-bottom: 30px">Living Classroom Web App</h4>
-      </figure>
+          <h4 align="center" style="padding-bottom: 30px">Living Classroom Web App</h4>
 
-      <figure>
+          <object id="livingclassrooms" width="100%" height= "500px" type="text/html" data="https://livingclassrooms.herokuapp.com/">
+          </object>
+       
 
+          <div align="right">
+              <a target="_blank" href="https://livingclassrooms.herokuapp.com/">Living Classroom</a>
+            </div>
 
-        <object id="livingclassrooms" width="100%" height= "500px" type="text/html" data="https://livingclassrooms.herokuapp.com/">
-        </object>
-     
+           <div class="container description">
+            <h5>About Project</h5>
+            <p>Living Classroom is a computer science capstone project done by my teammates(Rahat Maini, Aron Taylor, Adam Iyob). Their project is about developing a lamp that constantly scans and digitizes student notes, and sends them to a web app accessible to the student where the notes are organized by class automatically, as well as recording and transcribing lecture audio. </p>
+            <p>As the final assignment of the database class(CS 4750), my team developed the web application of the living classroom project. 
+            We aimed to design and build a tool for analytics and statistics monitoring for this product, a database storing account, notes, and audio metadata and their corresponding metrics. Through the application, the users can view a live school-wide lamp visualization and panels to monitor and study the usage of the lamps quantitatively.</p>
+                   
 
-  <div align="right">
-      <a target="_blank" href="https://livingclassrooms.herokuapp.com/">Living Classroom</a>
-    </div>
+           
+            <h5>My Role</h5>
+            <p>In this project, I developed some of the main functionalities of the application including registration page and interface for inserting and deleting from the database. Also, I participated to come up with a better design of the database. For example, our team did 3NF and BCNF proof of our tables for data normalization.  </p>
+        
 
-         <div class="container description">
-          <h5>About Project</h5>
-          <p>Living Classroom is a computer science capstone project done by my teammates(Rahat Maini, Aron Taylor, Adam Iyob). Their project is about developing a lamp that constantly scans and digitizes student notes, and sends them to a web app accessible to the student where the notes are organized by class automatically, as well as recording and transcribing lecture audio. </p>
-          <p>As the final assignment of the database class(CS 4750), my team developed the web application of the living classroom project. 
-We aimed to design and build a tool for analytics and statistics monitoring for this product, a database storing account, notes, and audio metadata and their corresponding metrics. Through the application, the users can view a live school-wide lamp visualization and panels to monitor and study the usage of the lamps quantitatively.</p>
-        </div>
-
-         <div class="container description">
-          <h5>My Role</h5>
-          <p>In this project, I developed some of the main functionalities of the application including registration page and interface for inserting and deleting from the database. Also, I participated to come up with a better design of the database. For example, our team did 3NF and BCNF proof of our tables for data normalization.  </p>
-        </div>
-
-        <div class="container description">
-          <h5>Skills & Tools</h5>
-          <button disabled class="skills">HTML</button>
-          <button disabled class="skills">Javascript</button>
-          <button disabled class="skills">CSS</button>
-          <button disabled class="skills">MySQL</button>
-          <button disabled class="skills">PHP</button>
-          <button disabled class="skills">Ajax</button>
-          <button href="https://materializecss.com/" class="skills abled">Materialize</button>
-        </div>
+         
+            <h5>Skills & Tools</h5>
+            <button disabled class="skills">HTML</button>
+            <button disabled class="skills">Javascript</button>
+            <button disabled class="skills">CSS</button>
+            <button disabled class="skills">MySQL</button>
+            <button disabled class="skills">PHP</button>
+            <button disabled class="skills">Ajax</button>
+            <a href="https://materializecss.com/" target="_blank"><button class="skills abled">Materialize</button></a>
+          </div>
 
 
       </figure>
-    </div>
+    
 
     <hr width="90%">
   
@@ -207,20 +205,22 @@ We aimed to design and build a tool for analytics and statistics monitoring for 
         <div class="container description">
           <h5 >About KSEA</h5>
           <p>KSEA is a Korean American Scientists and Engineers Association club at the University of Virginia. Click the image for more information.</p>
-        </div>
-
-         <div class="container description">
+        
           <h5>My Role</h5>
           <p> I manage the website with HTML. My role includes updating the calendar and any other update needed on the webpage.</p>
-        </div>
-
-        <div class="container description">
+        
           <h5>Skills & Tools</h5>
           <button disabled class="skills">HTML</button>
         </div>
 
       </div>
+
     </figure>
+    </figure>
+
+    </div>
+
+  </div>
 
   </section>
 
@@ -231,21 +231,29 @@ We aimed to design and build a tool for analytics and statistics monitoring for 
 
       <hr width="90%">
       <div class="text-center row justify-content-between">
-    <div class="education col-4" style="font-size: 25px">
-      University of Virginia <img src="img/uva.png" width="25px">
-    </div>
-    <div class="education col-4" style="font-size: 20px;color: #62676a">
+        <div class="education col-6" >
+            <div class="container " id="college">
+            University of Virginia <img src="img/uva.png">
+          </div>
+            <div class="education" id="degree">
+            Computer Science
+          </div>
+        </div>
+
+        <div id="degree" class="education col-6" style="color: #62676a">
       Bachelors of Arts
     </div>
+    </div>
+    
   </div>
 
-   <div class="row justify-content-between text-center" style="padding-bottom: 30px;">
-    <div class="education col-3" style="font-size: 20px">
+   <!-- <div class="row justify-content-between text-center" style="padding-bottom: 30px;padding-right: 30%">
+    <div class="education" id="degree">
       Computer Science
     </div>
-  </div>
+  </div> -->
 
-  <div class="row" style="padding: 30px;">
+  <div class="row class-list" >
     <div class="col-2"></div>
     <div class="col-7">
       <ul class="list-group list-group-flush">
@@ -310,7 +318,7 @@ We aimed to design and build a tool for analytics and statistics monitoring for 
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">Charlottesville, VA, 22903</div>
+              <div class="small text-black-50">1910 Jefferson Park Avenue, Charlottesville, VA, 22903</div>
             </div>
           </div>
         </div>
